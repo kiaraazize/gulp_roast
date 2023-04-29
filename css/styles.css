@@ -1,0 +1,278 @@
+/* global element styling */
+
+body {
+  background-color: #082B59;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  line-height: 2;
+}
+
+figure {
+  margin: 0;
+  padding: 0 1rem 0 0;
+  flex-basis: 42;
+
+}
+
+img {
+  max-width: 200%;
+  border-radius: 1rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+
+p .address {
+  line-height: 1;
+}
+
+header {
+  border-bottom: 10px solid #d98555;
+}
+
+footer {
+  color: #f2f2f2;
+  text-align: center;
+  border-top: 10px solid #d98555;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+footer a {
+  color: #f2f2f2;
+  font-size: 2rem;
+  display: block;
+  margin: 0 1rem 3rem 1rem;
+}
+
+article {
+  flex-basis: 50%;
+  margin: -2rem 0 0 0;
+}
+
+a {
+  color: #59331d;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+/* navbar styling */
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+nav li {
+  margin: 0 1rem 1rem 1rem;
+  font-size: 1.3rem;
+  align-items: center;
+}
+
+nav .navbar {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 20px;
+}
+
+nav .logo img {
+  max-width: 180px;
+}
+
+nav .logo {
+  flex-basis: 20%;
+  justify-content: flex-start;
+  padding-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+nav a:hover {
+  color: #d98555;
+}
+
+/* establishes a white background & coffee beans  */
+.main-bkgd {
+  background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+  padding-bottom: 300px;
+}
+
+
+/* sits inside of the white background, centered */
+.home,
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.main {
+  display: flex;
+  gap: 1rem;
+}
+
+.button {
+  display: inline-block;
+  background-color: #59331D;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  color: #f2f2f2;
+  text-decoration: none;
+  border: 3px solid #59331d;
+}
+
+.button:hover {
+  background-color: #f2f2f2;
+  color: #59331d;
+}
+
+/* Styles for tablet for a max width of 845px */
+
+@media (max-width: 845px) {
+  nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+  }
+
+  nav li {
+    margin: 0 1rem 1rem 1rem;
+    font-size: 1.3rem;
+    align-items: center;
+  }
+
+  nav .navbar {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+    justify-content: center;
+  }
+
+  nav .logo img {
+    max-width: 180px;
+  }
+
+
+  nav .logo {
+    flex-basis: 20%;
+    justify-content: center;
+    padding-top: 10px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+
+  nav a:hover {
+    color: #d98555;
+  }
+
+  .main {
+    display: flex;
+    gap: 3rem;
+  }
+}
+
+/* Styles for mobile for a max width of 500px */
+
+@media (max-width: 500px) {
+  nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+
+  }
+
+  nav li {
+    margin: 0 1rem 1rem 1rem;
+    font-size: 1.3rem;
+    align-items: center;
+  }
+
+  nav .navbar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 5px;
+    justify-content: center;
+  }
+
+  nav .logo img {
+    max-width: 180px;
+  }
+
+  nav .logo {
+    flex-basis: 20%;
+    justify-content: center;
+    padding-top: 10px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+
+  nav a:hover {
+    color: #d98555;
+  }
+
+  .home,
+  .main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+  }
+
+  figure {
+    flex-basis: 100%;
+  }
+
+  figure img {
+    width: 26rem;
+  }
+}
